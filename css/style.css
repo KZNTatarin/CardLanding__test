@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&family=Poppins:wght@300&display=swap');
+
+body{
+    background-color: #333333;
+    color: white;
+    font-size: 28px;
+}
+
+.swiper {
+    display: flex;
+        width: 100%;
+        height: 100%;
+      }
+
+.swiper-slide {
+    width: 70%;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+}
+
+.swiper-pagination{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    width: 15%;
+    padding-left: 10px;
+    border-left: solid 2px gray;
+    font-family: 'Koulen', cursive;
+}
+
+.slide-wrapper{
+    width: 80%;
+    margin: 20px 30px;
+    height: 95%;
+}
+
+.about{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about__img img{
+    height: 50%;
+}
+
+.about__img{
+    margin: 50px 0 0 60px;
+    text-align: right;
+}
+
+.slide-header{
+    font-family: 'Koulen', cursive;
+    font-size: 50px;
+}
+
+.about__text_header{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.font-style_text{
+    font-family: 'Poppins', sans-serif;
+    line-height: 40px;
+}
+
+.text-selection_orange{
+    color: rgb(255, 69, 0);
+}
+
+.technology_header{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.skills-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+
+.technologies-used_list_item{
+    padding: 10px 25px;
+    border-radius: 30px;
+     font-family: 'Poppins', sans-serif;
+    position: relative;
+    cursor: pointer;
+    margin: 0 15px 30px 0;
+    transition: 0.5s; 
+}
+
+.technologies-used_list_item:hover{
+   transform: scale(0.9);
+}
+
+
+h3{
+ font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    margin: 30px 0;
+}
+
+.link__background_orange{
+    background: rgb(255,69,0);
+background: linear-gradient(90deg, rgba(247,153,118,1) 0%, rgba(251,104,50,1) 17%, rgba(255,69,0,1) 86%);
+}
+
+.technologies-studied_list_item{
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    cursor: pointer;
+    margin: 0 15px 30px 0;
+    transition: 0.3s;
+}
+
+.technologies-studied_list_item:hover{
+     transform: scale(0.9);
+}
+
+h4{
+    margin-bottom: 30px;
+}
+
+.portfolio_header{
+    text-align: center;
+}
+
+.portfolio__works-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.works-list__work{
+    margin: 10px;
+    border: solid 1px gray;
+    max-width: 40%;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+    
+    transition: 0.3s;
+}
+
+.works-list__work:hover{
+    border: solid 1px rgb(255,69,0);
+}
+
+.work__img{
+    background-color: gray;
+    width: auto;
+    text-align: center;
+    padding: 15px 10px;
+     overflow: hidden;
+}
+
+.work__img img{
+     max-width: 100%;
+}
+
+.work__text{
+    margin: 5px 10px;
+     font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+.work-link{
+     font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 18px;
+    margin: 5px 10px;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.portfolio__end{
+    margin-top: 10px;
+}
+
+.work-link:hover{
+    color: rgb(255,69,0);
+    text-decoration: underline;
+}
+
+.portfolio__end-link{
+    font-size: 25px;
+}
+
+.contacts__list_items{
+    display: flex;
+}
+
+.contacts__list-item{
+    color: white;
+    width: auto;
+    border-radius: 50%;
+    padding: 30px;
+      background: rgb(255,69,0);
+background: linear-gradient(90deg, rgba(247,153,118,1) 0%, rgba(251,104,50,1) 17%, rgba(255,69,0,1) 86%);
+}
+
+.contacts{
+    text-align: center;
+}
+
+h5{
+    margin-bottom: 30px;
+}
+
+.contacts__text{
+     font-family: 'Poppins', sans-serif;
+    color: white;
+    font-size: 25px;
+}
+
+.contacts__list_items{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.contacts__list-item{
+    margin: 30px 30px;
+    position: relative;
+    top:10px;
+    
+    transition: 0.5s;
+}
+
+.contacts__list-item:hover{
+    top: -10px;
+}
+
+.contacts__list-item img{
+    width: 150px;
+}
+
+@media (min-width: 1440px){
+    .work__text{
+        font-size: 20px;
+    }
+}
+
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+    .technologies-studied_list_item, .technologies-used_list_item{
+        font-size: 20px;
+    }
+    .work__text{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .font-style_text{
+        font-size: 21px;
+    }
+    .technologies-studied_list_item, .technologies-used_list_item{
+        font-size: 20px;
+    }
+    .work__text{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .about__img img{
+    height: 40%;
+    }
+    .about__img{
+    margin: 50px 0 0 30px;
+    text-align: right;
+    }
+    .font-style_text{
+        font-size: 24px;
+    }
+    .technologies-studied_list_item, .technologies-used_list_item{
+        font-size: 27px;
+    }
+    .work__text{
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .about__img img{
+    height: 40%;
+    }
+    .about__img{
+    margin: 50px 0 0 20px;
+    text-align: right;
+    }
+    .font-style_text{
+        font-size: 29px;
+    }
+    .technologies-studied_list_item, .technologies-used_list_item{
+        font-size: 27px;
+    }
+    .work__text{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 575px) {
+     .font-style_text{
+        font-size: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+    
